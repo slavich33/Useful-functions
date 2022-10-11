@@ -60,3 +60,18 @@
 // });
 
 // console.log(newNumber);
+
+import emojipedia from "./emojipedia";
+
+// const newEmojipedia = emojipedia.map(function (emojiEntry) {
+//   return emojiEntry.meaning.substring(0, 100);
+// });
+
+// console.log(newEmojipedia);
+
+function Cut(str) {
+  return str.meaning.substring(0, 100);
+}
+
+const newAr = emojipedia.map(Cut);
+console.log(newAr);
